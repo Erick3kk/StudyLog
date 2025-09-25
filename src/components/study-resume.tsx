@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import type { Study } from "../types/study";
+import type { StudySession } from "../types/study";
 
 interface StudyResumeProps {
-  study: Study;
+  study: StudySession;
   removeStudy: (id: string) => void;
 }
 
@@ -11,9 +11,12 @@ export function StudyResume({ study, removeStudy }: StudyResumeProps) {
     <div className="max-w-xl w-full bg-white border border-gray-200 rounded-lg shadow-sm p-6 mb-4 transition hover:shadow-md">
       <div className="flex justify-between items-start mb-4">
         <div>
-          <h2 className="text-lg font-semibold text-gray-800">{study.title}</h2>
+          <h2 className="text-lg font-semibold text-gray-800">{study.subject}</h2>
           <p className="text-sm text-gray-500">
             Data: <span className="font-medium text-gray-600">{study.date}</span>
+          </p>
+          <p className="text-sm text-gray-500">
+            Duração: <span className="font-medium text-gray-600">{study.minutes} minutos</span>
           </p>
         </div>
 
