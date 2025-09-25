@@ -13,7 +13,7 @@ export function StudyResume({ study, removeStudy }: StudyResumeProps) {
         <div>
           <h2 className="text-lg font-semibold text-gray-800">{study.subject}</h2>
           <p className="text-sm text-gray-500">
-            Data: <span className="font-medium text-gray-600">{study.date}</span>
+            Data: <span className="font-medium text-gray-600">{study.date}</span>s
           </p>
           <p className="text-sm text-gray-500">
             Duração: <span className="font-medium text-gray-600">{study.minutes} minutos</span>
