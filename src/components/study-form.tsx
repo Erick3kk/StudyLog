@@ -64,7 +64,8 @@ export function StudyForm({ onAdd }: StudyFormProps) {
         onChange={(e) => setDificuldade(Number(e.target.value) as Dificuldade)}
         placeholder="Dificuldade"
         min={1}
-        max={3} // Ajustado para max=3, pois Dificuldade só vai até 3
+        max={3} 
+    
         className="border rounded p-2"
       />
 
